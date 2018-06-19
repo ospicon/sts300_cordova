@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-device" version="0.2.3">
+    <name>Device</name>
+    <description>Cordova STS300 Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,sts300</keywords>
+    <js-module src="www/sts300.js" name="STS300Plugin">
+        <clobbers target="sts300" />
+    </js-module>
+    
+<!--     <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Device">
+                <param name="ios-package" value="CDVDevice"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/CDVDevice.h" />
+        <source-file src="src/ios/CDVDevice.m" />
+    </platform> -->
+
+    <platform name="android">
+        <source-file src="src/android/com/ospicon/sts300/STS300Plugin.java" target-dir="src/com/ospicon/sts300" />
+        <source-file src="src/android/libs/STS300.jar" target-dir="libs" />
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="STS300Plugin">
+                <param name="android-package" value="com.ospicon.sts300.STS300Plugin" />
+            </feature>
+        </config-file>
+    </platform>
+</plugin>
