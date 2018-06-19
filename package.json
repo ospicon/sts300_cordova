@@ -1,0 +1,22 @@
+{
+  "name": "cordova-plugin-sts300",
+  "version": "0.1.1",
+  "description": "",
+  "cordova": {
+    "id": "cordova-plugin-sts300",
+    "platforms": []
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ospicon/sts300_cordova.git"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ospicon/sts300_cordova/issues"
+  },
+  "homepage": "https://github.com/ospicon/sts300_cordova#readme"
+}
